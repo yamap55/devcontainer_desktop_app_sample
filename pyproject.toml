@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "python_repository_simple"
+name = "devcontainer_desktop_app_sample"
 version = "0.0.0"
-description = "python_repository_simple"
+description = "devcontainer_desktop_app_sample"
 authors = ["yamap55 <1785817+yamap55@users.noreply.github.com>"]
 license = "Creative Commons CC0 1.0 Universal (CC0 1.0) Public Domain Dedication"
 
@@ -13,16 +13,8 @@ python = "^3.9"
 black = "24.4.2"
 ruff = "^0.4.4"
 
-# test
-pytest = "8.2.0"
-pytest-cov = "5.0.0"
-
 # notebook
 ipykernel = "6.29.4"
-
-[tool.pytest.ini_options]
-junit_family = "xunit1"
-addopts = "--verbose --cov --showlocals --durations=5"
 
 [tool.coverage.run]
 omit = ["*/tests/*", "*/site-packages/*"]
